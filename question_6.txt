@@ -1,10 +1,17 @@
-Question_6:Simplify the compilation process
-Question_id:https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tghttps://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+Question Title:Simplify The Compilation Process
+
+Question_id:https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tghttps://my.newtonschool.co/playground/code/mepmefz373b4?
+lecture_hash=t5qc0u6ap8tg
+
 Solution:
+
 which bash
 echo "#!/usr/bin/bash" > build.sh
 echo "gcc hello.c -o hello" >> build.sh
 chmod +x build.sh
 ./build.sh
+
 Approach:
-1.
+1. I found the PATH variable for bash using the which command.
+2. I added the two lines containing the shebang operator line for bash and the gcc command to make hello.c executable.
+3. I set the permissions of build.sh to executable and executed it.
