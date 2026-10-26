@@ -1,6 +1,9 @@
 Question Title:API Service Directory Workflow
+
 Question_id:https://my.newtonschool.co/playground/code/5ypni48t3pzs
-solution:
+
+Solution:
+
 cd api-service
 git init
 git add README.md 
@@ -9,4 +12,10 @@ git add server.js routes.js package.json
 git commit -m "Add server files"
 git status
 git log
+
 Approach:
+1. I navigated inside the api-service directory.
+2. Then I initialized git inside it.
+3. I added README.md to the staging area and committed it with a message "Add documentation".
+4. Then I added server.js, routes.js, package.json to the staging area and committed them with a message "Add server files".
+5. I checked the status of my repo using git status and log commands.
