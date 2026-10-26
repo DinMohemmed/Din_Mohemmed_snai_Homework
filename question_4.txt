@@ -1,10 +1,18 @@
-Question_title: Deployment Project Permissions
+Question Title: Deployment Project Permissions
+
 Question_id: https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
-solution:
+
+Solution:
+
 ls -a
 chmod 700 ./deployment/app/*.py
 chmod 770 ./deployment/datasets
 chmod 770 ./deployment/datasets/*
 chmod 644 ./deployment/docs/OVERVIEW.md
 chmod 755 ./deployment/bin/*.sh
+
 Approach:
+1. I set the permissions of all Python files to 700 inside the app directory.
+2. I set the permissions of the datasets directory and all files inside it to 770.
+3. I set the permission of the OVERVIEW.md file to 644 inside the docs directory.
+4. I set the permissions of all shell script files to 755 inside the bin directory.
