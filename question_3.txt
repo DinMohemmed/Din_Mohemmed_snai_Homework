@@ -1,6 +1,9 @@
-question_title: Data breach response
-question_id: https://my.newtonschool.co/playground/code/orlr84xpc3oo?lecture_hash=vifkrugjcwth
-solution:
+Question Title: Data Breach Response
+
+Question_id: https://my.newtonschool.co/playground/code/orlr84xpc3oo?lecture_hash=vifkrugjcwth
+
+Solution:
+
 pwd
 ls -a
 cp ./breach_response/evidence/log_dump.txt ./breach_response/log_dump.txt
@@ -15,4 +18,15 @@ chmod 600 ./breach_response/secure/forensics_report.txt
 chmod 644 ./breach_response/reports/incident_summary.txt
 echo "Escalated to security team" >> ./breach_response/reports/incident_summary.txt
 chmod 444 ./breach_response/reports/incident_summary.txt
+
 Approach:
+1. I copied evidence/log_dump.txt to the current directory.
+2. Then I gave write permissions to the locked evidence directory.
+3. I moved the whole evidence directory inside the secure directory.
+4. I removed the write permission after modifying the folder.
+5. Then I set the permission of Incident_summary.txt inside the reports directory to 644.
+6. I appended "Breach confirmed" to the end of the incident_summary.txt file and then again restored its original 444 permission.
+7. I appended "Forensics Complete" to the end of the forensics_complete.txt file and then set its permissions to 600.
+8. I again gave write permission to the incident_summary.txt file inside the reports directory, appended "Escalated to security team" to the end of the file,     and finally restored its permissions to 444.
+
+
