@@ -1,8 +1,16 @@
 Question Title: The Missing Project Credentials
+
 Question_id:https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
 Solution:
+
 cd EventApp
 cat ./config/.env
 touch ./db_password.txt
 cp ./config/.env ./db_password.txt
+
 Approach:
+1. I navigated inside the EventApp directory and found the DB_PASSWORD entry.
+2. I created a file named db_password.txt inside the project folder.
+3. I copied the DB_PASSWORD entry to db_password.txt file.
+
