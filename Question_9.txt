@@ -1,0 +1,18 @@
+Question Title:Build Pipeline Directory structure
+Question_id:https://my.newtonschool.co/playground/code/r2ui5gw5lhqt?lecture_hash=n9ynhcuvkld8
+Solution:
+mkdir -p pipeline/stages/build pipeline/stages/test/unit/integration pipeline/env/staging pipeline/env/prod pipeline/artifacts/old
+
+chmod 750 pipeline/stages
+chmod 770 pipeline/artifacts
+chmod 700 pipeline/env
+
+cd pipeline/stages/build/
+touch app.py config.json NOTES.md
+echo "Build stage initialized." > NOTES.md
+
+cd ../..
+cd artifacts/old/
+touch build.log test.log deploy.log
+chmod 640 build.log test.log deploy.log
+Approach:
