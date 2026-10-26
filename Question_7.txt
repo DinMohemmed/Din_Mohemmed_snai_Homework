@@ -1,0 +1,8 @@
+Question Title: The Missing Project Credentials
+Question_id:https://my.newtonschool.co/playground/code/7x83ezx6nimm
+Solution:
+cd EventApp
+cat ./config/.env
+touch ./db_password.txt
+cp ./config/.env ./db_password.txt
+Approach:
