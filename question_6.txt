@@ -7,3 +7,4 @@ echo "gcc hello.c -o hello" >> build.sh
 chmod +x build.sh
 ./build.sh
 Approach:
+1.
