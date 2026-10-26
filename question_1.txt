@@ -1,0 +1,23 @@
+Question Title: Archiving a Release Directory
+Question ID: https://my.newtonschool.co/playground/code/f1a9z5dbjqyw?lecture_hash=zjmam2xzlc9l
+solution:
+pwd
+mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx
+cp report.docx report_backup.docx
+mkdir old
+mv draft.docx old/
+mv summary.docx final_summary.docx
+cp final_summary.docx old/
+rm report_backup.docx
+Approach:
+1. First,I checked my current working directory using pwd command, it shows that i am inside /box.
+2. question asked to create folder named project-files , so i created it using mkdir command.
+3. then after switching my working directory to project-files, i created three folders named report.docx summary.docx draft.docx using touch command.
+4. next i createdd another folder in project-files/ directory named old using mkdir.
+5. then i was as asked to copy report.docx and also rename it using cp command.
+6. I moved draft.docx to old/ using mv command.
+7. also renamed summary.docx to final_summary.docx 
+8. then copied final_summary.txt to old/
+9. atlast i removed report_backup.docx using rm.
