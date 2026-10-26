@@ -1,0 +1,10 @@
+Question_title: Deployment Project Permissions
+Question_id: https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+solution:
+ls -a
+chmod 700 ./deployment/app/*.py
+chmod 770 ./deployment/datasets
+chmod 770 ./deployment/datasets/*
+chmod 644 ./deployment/docs/OVERVIEW.md
+chmod 755 ./deployment/bin/*.sh
+Approach:
