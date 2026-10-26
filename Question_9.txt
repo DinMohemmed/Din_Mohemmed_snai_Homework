@@ -1,6 +1,9 @@
 Question Title:Build Pipeline Directory structure
+
 Question_id:https://my.newtonschool.co/playground/code/r2ui5gw5lhqt?lecture_hash=n9ynhcuvkld8
+
 Solution:
+
 mkdir -p pipeline/stages/build pipeline/stages/test/unit/integration pipeline/env/staging pipeline/env/prod pipeline/artifacts/old
 
 chmod 750 pipeline/stages
@@ -15,4 +18,10 @@ cd ../..
 cd artifacts/old/
 touch build.log test.log deploy.log
 chmod 640 build.log test.log deploy.log
+
 Approach:
+
+1. First, I created the directory-file structure as asked in the question.
+2. Then i set the permissions of three directories stages , artifacts , env as asked.
+3. Then I created three files inside the build directory and added the text "Build stage initialized." in NOTES.md.
+4. Then I created three files inside the old directory and set their permissions as asked in the question.
