@@ -1,4 +1,4 @@
-Question Title: Archiving a Release Directory
+Question Title: Advanced File Management
 Question ID: https://my.newtonschool.co/playground/code/f1a9z5dbjqyw?lecture_hash=zjmam2xzlc9l
 solution:
 pwd
